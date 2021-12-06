@@ -36,7 +36,7 @@ def nucl2codon(nucl_pos):
         return (None, -1)
 
     gene = matches[0]
-    codon = (nucl_pos - genes[gene][0] // 3) + 1
+    codon = ((nucl_pos - genes[gene][0]) // 3) + 1
     
     return gene, codon
     
